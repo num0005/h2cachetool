@@ -16,10 +16,11 @@ install:
 build_script:
   - cargo build --all --verbose --release
 
+test_script:
+  - cargo test --verbose %cargoflags%
+
 after_build:
 - cmd: >-
     CD %APPVEYOR_BUILD_FOLDER%\target\release\
-    appveyor PushArtifact h2decompress.exe
 
-test_script:
-  - cargo test --verbose %cargoflags%
+    appveyor PushArtifact h2decompress.exe
