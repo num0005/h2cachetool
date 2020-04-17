@@ -1,0 +1,8 @@
+[package]
+name = "h2decompress"
+version = "0.1.0"
+authors = ["Camden Smallwood <camden.smallwood@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+inflate = "*"
