@@ -18,7 +18,7 @@ build_script:
 
 after_build:
 - cmd: >-
-    CD %APPVEYOR_BUILD_FOLDER%\dist\
+    CD %APPVEYOR_BUILD_FOLDER%\target\release\
     appveyor PushArtifact h2decompress.exe
 
 test_script:
