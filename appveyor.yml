@@ -13,7 +13,8 @@ install:
   - rustc -vV
   - cargo -vV
 
-build: true
+build_script:
+  - cargo build --all --verbose --release
 
 after_build:
 - cmd: >-
