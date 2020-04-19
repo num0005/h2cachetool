@@ -1,8 +1,9 @@
 [package]
-name = "h2decompress"
+name = "h2cachetool"
 version = "0.1.0"
-authors = ["Camden Smallwood <camden.smallwood@gmail.com>"]
+authors = ["Camden Smallwood <camden.smallwood@gmail.com>", "Num0005 <num0005@outlook.com>"]
 edition = "2018"
 
 [dependencies]
 inflate = "*"
+deflate = "*"
