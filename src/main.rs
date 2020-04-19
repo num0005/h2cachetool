@@ -100,7 +100,7 @@ fn pack(mut input_file: &File, mut output_file: &File, should_compress: bool) ->
 		}
 		
 		if should_compress {
-			let compressed_data = deflate::deflate_bytes_zlib(&section_data[..len]);
+			let compressed_data = deflate::deflate_bytes_zlib_conf(&section_data[..len], deflate::Compression::Fast);
 			data.extend_from_slice(&compressed_data[..]);
 			section.size = compressed_data.len() as i32;
 		} else {
