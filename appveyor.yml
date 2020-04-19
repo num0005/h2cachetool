@@ -23,4 +23,4 @@ after_build:
 - cmd: >-
     CD %APPVEYOR_BUILD_FOLDER%\target\release\
 
-    appveyor PushArtifact h2decompress.exe
+    appveyor PushArtifact h2cachetool.exe
